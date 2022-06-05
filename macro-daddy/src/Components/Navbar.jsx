@@ -7,7 +7,20 @@ const Navbar = () => {
         <img src={require(`../images/IconButton (1).png`)} alt="" />
         <p>MACRO DADDY</p>
       </div>
-      <input className="nav-input" type="text" name="" id="" placeholder="Search" />
+      <form className="nav-input"
+        action="">
+        <input
+        //   className="nav-input"
+          type="text"
+          name=""
+          id=""
+          placeholder="Search"
+        />
+                <button className="mag-butt" type="submit" class="search-button">
+                <img className="magnify" src={require(`../images/magnify.png`)} alt="" />
+        </button>
+      </form>
+
       <p className="user-butt">MY MACROS</p>
     </div>
   );
