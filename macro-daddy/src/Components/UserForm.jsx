@@ -1,9 +1,14 @@
 import React from "react";
 
-const UserForm = () => {
+const UserForm = ({ userFormSubmit, setUserFormSubmit }) => {
   return (
     <div className="userform-parent">
-      <form className="userform" action="">
+      <form
+        className="userform"
+        onSubmit={() => {
+          setUserFormSubmit(true);
+        }}
+      >
         <p>CREATE YOUR PROFILE</p>
         <p>Enter Your Name</p>
         <input type="form" placeholder="Name" />
@@ -31,7 +36,7 @@ const UserForm = () => {
           <option value="">Not Fattie</option>
           <option value="">Lean Meat</option>
         </select>
-        <input type="submit" />
+        <button type="submit">I am a butt on</button>
       </form>
     </div>
   );

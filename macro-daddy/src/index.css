@@ -72,8 +72,17 @@
 }
 
 .magnify {
-  background-color: black;
-  /* background: transparent; */
+  /* background-color: black; */
+  height: 100%;
+}
+
+.mag-butt {
+  transform: translateY(1px);
+  height: 23px;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  /* opacity: 0; */
 }
 
 /* ------------------------------ Landing Page ------------------------------ */
@@ -124,9 +133,9 @@
   animation-delay: 600ms;
 }
 
-.left-landing .start-butt {
+.start-butt {
   font-family: "Lexend";
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   font-weight: 200;
   font-size: 1.8rem;
   line-height: 1rem;
@@ -145,7 +154,6 @@
   color: #ffffff;
   line-height: 1.8rem;
 }
-
 
 .start-butt:hover {
   transform: translateX(20px);
@@ -167,8 +175,6 @@
   display: flex;
   flex-direction: column;
 }
-
-
 
 /* -------------------------------- CardList -------------------------------- */
 
