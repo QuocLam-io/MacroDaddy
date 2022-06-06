@@ -13,18 +13,21 @@ function App() {
   const [formYes, setFormYes] = useState(false);
   const [userFormSubmit, setUserFormSubmit] = useState(false);
   const [recipe, setRecipe] = useState({});
+  //!Add physical
+  const [bmr, setBmr] = useState(0);
+  const [searchResults, setSearchResults] = useState([]);
 
 
-  useEffect(() => {
-    const fetchAPI = async () => {
-      const result = await axios(
-        `https://api.spoonacular.com/recipes/complexSearch?query=pizza&apiKey=5096d3e2380a441abd75c539ea5c98e4&addRecipeNutrition=true`
-      );
-      setRecipe(result.data.results)
-      console.log(recipe)
-    };
-    fetchAPI();
-  },[]);
+  // useEffect(() => {
+  //   axios
+  //     .get(`https://api.spoonacular.com/recipes/complexSearch?query=pizza&apiKey=5096d3e2380a441abd75c539ea5c98e4&addRecipeNutrition=true`)
+  //   .then(results => {
+  //     console.log(results);
+  //   })
+  //   .catch(err => {
+  //     console.log(err);
+  //   });
+  // }, []);
 
 
   return (
@@ -35,8 +38,7 @@ function App() {
           path="/"
           element={
             userFormSubmit ? (
-              <CardList 
-              userStats={userStats} />
+              <CardList userStats={userStats} bmr={bmr} setBmr={setBmr}/>
             ) : (
               <LandingPage
                 formConfirm={formYes}
@@ -56,4 +58,3 @@ function App() {
 }
 
 export default App;
-

@@ -14,7 +14,7 @@
   padding: 10px;
   justify-content: space-between;
   align-items: center;
-  height: 7vh;
+  min-height: 7vh;
   background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0.09) 0%,

@@ -15,11 +15,11 @@ const UserForm = ({
 
           setUserStats({
             name: event.target[0].value,
-            age: event.target[1].value,
+            age: parseInt(event.target[1].value),
             gender: event.target[2].value,
-            height: event.target[3].value,
-            weight: event.target[4].value,
-            physical: event.target[5].value,
+            height: parseInt(event.target[3].value),
+            weight: parseInt(event.target[4].value),
+            physical: parseInt(event.target[5].value),
           });
         }}
       >
@@ -35,8 +35,8 @@ const UserForm = ({
         </p>
         <input className="form-number" type="number" placeholder="Age" />
         <select name="gender" id="gender">
-          <option value="girl">Girlie</option>
-          <option value="boy">Boiiii</option>
+          <option value="female">Girlie</option>
+          <option value="male">Boiiii</option>
         </select>
         <input type="number" placeholder="Inches" />
         <input type="number" placeholder="Pounds" />
