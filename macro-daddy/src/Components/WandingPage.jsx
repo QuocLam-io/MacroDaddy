@@ -1,7 +1,7 @@
 import React from "react";
 import UserForm from "./UserForm";
 
-const LandingPage = ({ formConfirm, setFormYes, userFormSubmit, setUserFormSubmit }) => {
+const LandingPage = ({ formConfirm, setFormYes, userFormSubmit, setUserFormSubmit, userStats, setUserStats }) => {
   return (
     <div className="landing-parent">
       <div className="left-landing">
@@ -15,10 +15,10 @@ const LandingPage = ({ formConfirm, setFormYes, userFormSubmit, setUserFormSubmi
             setFormYes(true);
           }}
         >
-          GET STARTED <span>→</span>
+          CLICK ME YOU LITTLE BITCH <span>→</span>
         </div>
       </div>
-      <div className="right-landing">{formConfirm && <UserForm userFormSubmit={userFormSubmit} setUserFormSubmit={setUserFormSubmit}    />}</div>
+      <div className="right-landing">{formConfirm && <UserForm userFormSubmit={userFormSubmit} setUserFormSubmit={setUserFormSubmit} userStats={userStats} setUserStats={setUserStats}   />}</div>
     </div>
   );
 };

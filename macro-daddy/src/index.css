@@ -133,16 +133,6 @@
   animation-delay: 600ms;
 }
 
-.start-butt {
-  font-family: "Lexend";
-  /* margin-top: 5rem; */
-  font-weight: 200;
-  font-size: 1.8rem;
-  line-height: 1rem;
-  letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
 .left-landing p:nth-child(4) {
   font-family: "Lexend";
   font-size: 1.2rem;
@@ -155,9 +145,35 @@
   line-height: 1.8rem;
 }
 
+.start-butt {
+  font-family: "Lexend";
+  /* border: #ffffff 1px solid; */
+  font-weight: 200;
+  font-size: 1.8rem;
+  line-height: 1rem;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* .start-butt span {
+  border: #ffffff 1px solid;
+  transform: translateX(20px);
+} */
+
 .start-butt:hover {
   transform: translateX(20px);
   cursor: pointer;
+}
+
+@keyframes fadedown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 /* --- Right Landing ---*/
@@ -170,6 +186,22 @@
 }
 
 /* ---------------------------------- Form ---------------------------------- */
+
+.userform-parent {
+  animation: fadeInRight 1000ms forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 .userform {
   display: flex;
@@ -184,13 +216,10 @@
   background: #121212;
 }
 
-@keyframes fadedown {
-  0% {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+.test {
+  color:white
+}
+
+.macro-display {
+  color: white;
 }
