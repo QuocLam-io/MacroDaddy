@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { Link, Route, Routes, Navigate } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Navbar";
@@ -12,7 +12,7 @@ function App() {
   const [userStats, setUserStats] = useState({});
   const [formYes, setFormYes] = useState(false);
   const [userFormSubmit, setUserFormSubmit] = useState(false);
-  const [recipe, setRecipe] = useState({});
+  const [recipe, setRecipe] = useState("");
   const [bmr, setBmr] = useState(0);
   const [searchResults, setSearchResults] = useState("");
 
@@ -40,7 +40,6 @@ function App() {
   // 1091495abb7f4441ac92e1223fb6d917
   // 8059132ad81c4ef2b381fe955144b976
   // 6116226f1c414d98b22766621f045154
-  // callAxios();
 
   return (
     <div className="App">

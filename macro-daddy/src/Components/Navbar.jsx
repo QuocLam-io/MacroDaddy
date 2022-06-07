@@ -23,7 +23,7 @@ const Navbar = ({ setSearchResults, searchResults, callAxios }) => {
     <div className="navbar">
       <Link to="/">
         <div className="icon">
-          <img src={require(`../images/IconButton (1).png`)} alt="" />
+          <img src={require(`../images/IconButtonOrange.png`)} alt="" />
           <p>MACRO DADDY</p>
         </div>
       </Link>
