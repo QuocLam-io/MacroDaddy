@@ -1,15 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ setSearchResults, searchResults, callAxios }) => {
+const Navbar = ({ setSearchResults, searchResults, callAxios, submitHandler }) => {
   const searchResultsHandler = (e) => {
     setSearchResults(e.target.value);
-  };
-
-  const submitHandler = (e) => {
-    e.preventDefault();
-    callAxios();
-    setSearchResults("");
   };
 
   const handleKeyDown = (event) => {

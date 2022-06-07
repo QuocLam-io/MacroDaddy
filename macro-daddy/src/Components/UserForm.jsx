@@ -42,7 +42,7 @@ const UserForm = ({
         <input type="number" placeholder="Pounds" />
         <select name="physical" id="physical">
           <option value="1.2">Sedentary 🦥</option>
-          <option value="1.375">Light Activity: Exercise 1-3/week 🐽</option>
+          <option value="1.375">Light Activity: Exercise 1-3/week 🐷</option>
           <option value="1.55">Moderately Active: Exercise 3-5/week 🐸</option>
           <option value="1.725">Very Active: Exercise 6-7/week 🦈</option>
           <option value="1.9">Lean Meat: Exercise 7+/week 🦁</option>

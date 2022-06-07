@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import axios from "axios";
+import Card from "./Card";
 
-const CardList = ({ userStats, bmr, setBmr, callAxios }) => {
-    console.log(callAxios);
+const CardList = ({ userStats, bmr, setBmr, callAxios, displayCard }) => {
 
   useEffect(() => {
     if (userStats.gender === "female") {
@@ -23,7 +23,7 @@ const CardList = ({ userStats, bmr, setBmr, callAxios }) => {
       );
     }
   }, []);
-  console.log(bmr);
+//   console.log(bmr);
 
   return (
     <div className="cardlist-parent">
@@ -33,6 +33,7 @@ const CardList = ({ userStats, bmr, setBmr, callAxios }) => {
         <p>Proteins:</p>
         <p>Carbs:</p>
         <p>Fats:</p>
+        <p>{displayCard}</p>
       </div>
     </div>
   );
