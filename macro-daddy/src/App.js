@@ -78,6 +78,7 @@ function App() {
                 bmr={bmr}
                 setBmr={setBmr}
                 callAxios={callAxios}
+                recipes={recipes}
                 // displayCard={displayCard}
               />
             ) : (

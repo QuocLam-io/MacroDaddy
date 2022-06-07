@@ -2,8 +2,27 @@ import React, { useEffect } from "react";
 import axios from "axios";
 import Card from "./Card";
 
-const CardList = ({ userStats, bmr, setBmr, callAxios, displayCard }) => {
+const CardList = ({
+  userStats,
+  bmr,
+  setBmr,
+  callAxios,
+  displayCard,
+  recipes,
+}) => {
 
+//! --------------------------- Yonghai is a genius -------------------------- */
+
+  let data;
+
+  if (recipes.length === 0) {
+    data = <h1>My heart leaps, running for the stick You never threw.</h1>;
+  } else {
+    data = recipes.map((recipe) => {
+      return <Card key={recipe.id} recipe={recipe} />;
+    });
+  }
+//! --------------------------------------------------------------------------- */
   useEffect(() => {
     if (userStats.gender === "female") {
       setBmr(
@@ -23,7 +42,7 @@ const CardList = ({ userStats, bmr, setBmr, callAxios, displayCard }) => {
       );
     }
   }, []);
-//   console.log(bmr);
+  //   console.log(bmr);
 
   return (
     <div className="cardlist-parent">
@@ -33,7 +52,7 @@ const CardList = ({ userStats, bmr, setBmr, callAxios, displayCard }) => {
         <p>Proteins:</p>
         <p>Carbs:</p>
         <p>Fats:</p>
-        <p>{displayCard}</p>
+        <div>{data}</div>
       </div>
     </div>
   );
