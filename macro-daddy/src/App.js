@@ -41,7 +41,6 @@ function App() {
         //!Set state for results
         setRecipe(response.data.results);
         // console.log(response.data.results);
-        // console.log(response.data.results);
         // console.log(response.data.results[0].nutrition.nutrients[0].amount); //Calories
         // console.log(response.data.results[0].nutrition.nutrients[8].amount); //Protein
         // console.log(response.data.results[0].nutrition.nutrients[1].amount); //Fat
