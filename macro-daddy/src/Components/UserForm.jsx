@@ -19,7 +19,7 @@ const UserForm = ({
             gender: event.target[2].value,
             height: parseInt(event.target[3].value),
             weight: parseInt(event.target[4].value),
-            physical: parseInt(event.target[5].value),
+            physical: parseFloat(event.target[5].value),
           });
         }}
       >

@@ -1,21 +1,25 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 
-const CardList = ({ userStats, bmr, setBmr }) => {
+const CardList = ({ userStats, bmr, setBmr, callAxios }) => {
+    console.log(callAxios);
+
   useEffect(() => {
     if (userStats.gender === "female") {
       setBmr(
-        655 +
+        (655 +
           4.35 * userStats.weight +
           4.7 * userStats.height -
-          4.7 * parseInt(userStats.age)
+          4.7 * userStats.age) *
+          userStats.physical
       );
     } else {
       setBmr(
-        66 +
+        (66 +
           6.23 * userStats.weight +
           12.7 * userStats.height -
-          6.8 * userStats.age
+          6.8 * userStats.age) *
+          userStats.physical
       );
     }
   }, []);
