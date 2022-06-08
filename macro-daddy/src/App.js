@@ -16,8 +16,16 @@ function App() {
   const [recipes, setRecipe] = useState("");
   const [bmr, setBmr] = useState(0);
   const [searchResults, setSearchResults] = useState("");
+  const [selectedMacros, setSelectedMacros] = useState({})
+  console.log(selectedMacros);
+  const [displayMacros, setDisplayMacros] = useState({
+    calories: 0,
+    carbs: 0,
+    fat: 0,
+    protein: 0,
+  });
 
-//! ------------------------- Search Button Function ------------------------- */
+  //! ------------------------- Search Button Function ------------------------- */
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -25,7 +33,18 @@ function App() {
     setSearchResults("");
   };
 
-//! ---------------------------------- Axios --------------------------------- */
+  //! --------------------------Select Recipe Function----------------------------- */
+
+  // const selectRecipe = () => {
+  //   setDisplayMacros({
+  //     calories: calories +=
+  //     carbs: carbs +=
+  //     fat: fat +=
+  //     protein: protein +=
+  //   })
+  // };
+
+  //! ---------------------------------- Axios --------------------------------- */
 
   let callAxios = () => {
     axios
@@ -67,7 +86,7 @@ function App() {
                 setBmr={setBmr}
                 callAxios={callAxios}
                 recipes={recipes}
-                // displayCard={displayCard}
+                setSelectedMacros={setSelectedMacros}
               />
             ) : (
               <LandingPage
