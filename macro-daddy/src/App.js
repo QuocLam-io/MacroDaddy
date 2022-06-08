@@ -17,20 +17,15 @@ function App() {
   const [bmr, setBmr] = useState(0);
   const [searchResults, setSearchResults] = useState("");
 
-  // let displayCard = () => {
-  //   console.log("blub");
-  //   const cards = recipes.map((recipe) => {
-  //     return <Card recipe={recipe} />;
-  //   });
-    
-  // };
+//! ------------------------- Search Button Function ------------------------- */
 
   const submitHandler = (e) => {
     e.preventDefault();
     callAxios();
-    // displayCard();
     setSearchResults("");
   };
+
+//! ---------------------------------- Axios --------------------------------- */
 
   let callAxios = () => {
     axios
@@ -38,15 +33,7 @@ function App() {
         `https://api.spoonacular.com/recipes/complexSearch?query=${searchResults}&apiKey=1091495abb7f4441ac92e1223fb6d917&addRecipeNutrition=true`
       )
       .then((response) => {
-        //!Set state for results
         setRecipe(response.data.results);
-        // console.log(response.data.results);
-        // console.log(response.data.results[0].nutrition.nutrients[0].amount); //Calories
-        // console.log(response.data.results[0].nutrition.nutrients[8].amount); //Protein
-        // console.log(response.data.results[0].nutrition.nutrients[1].amount); //Fat
-        // console.log(response.data.results[0].nutrition.nutrients[3].amount); //Carbs
-        // console.log(response.data.results[0].image); //Image
-        // console.log(response.data.results[0].title); //Name
       })
       .catch((error) => {
         console.log(error);
@@ -58,6 +45,8 @@ function App() {
   // 1091495abb7f4441ac92e1223fb6d917
   // 8059132ad81c4ef2b381fe955144b976
   // 6116226f1c414d98b22766621f045154
+
+  //! ------------------------------ Return/Routes ------------------------------ */
 
   return (
     <div className="App">

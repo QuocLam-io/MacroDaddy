@@ -10,19 +10,19 @@ const CardList = ({
   displayCard,
   recipes,
 }) => {
+  //! --------------------------- Yonghai is a genius -------------------------- */
 
-//! --------------------------- Yonghai is a genius -------------------------- */
-
-  let data;
+  let recipeCards;
 
   if (recipes.length === 0) {
-    data = <h1>My heart leaps, running for the stick You never threw.</h1>;
+    recipeCards = <h1>My heart leaps, running for the stick you never threw.</h1>;
   } else {
-    data = recipes.map((recipe) => {
+    recipeCards = recipes.map((recipe) => {
       return <Card key={recipe.id} recipe={recipe} />;
     });
   }
-//! --------------------------------------------------------------------------- */
+
+  //! --------------------------------------------------------------------------- */
   useEffect(() => {
     if (userStats.gender === "female") {
       setBmr(
@@ -46,13 +46,13 @@ const CardList = ({
 
   return (
     <div className="cardlist-parent">
+      <div className="card-display">{recipeCards}</div>
       <div className="macro-display">
         <p>Age: {userStats.age}</p>
         <p>Calories: {bmr}</p>
-        <p>Proteins:</p>
-        <p>Carbs:</p>
-        <p>Fats:</p>
-        <div>{data}</div>
+        <p>Proteins: </p>
+        <p>Carbs: </p>
+        <p>Fats: </p>
       </div>
     </div>
   );

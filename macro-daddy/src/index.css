@@ -9,6 +9,10 @@
 
 /* --------------------------------- Navbar --------------------------------- */
 
+body {
+  background: #121212;
+}
+
 .navbar {
   display: flex;
   padding: 10px;
@@ -211,14 +215,38 @@
 
 .cardlist-parent {
   display: flex;
+  flex-wrap: wrap;
   height: 100vh;
+  background: #121212;
+  /* border: lemonchiffon 1px solid; */
+  color: white;
+}
+.card-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* margin: 2rem 0 2rem 0; */
+  height: 40vh;
+  width: 70%;
   background: #121212;
 }
 
-.test {
-  color: white;
+.macro-display {
+  width: 30%;
+  /* background: teal; */
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  
+
 }
 
-.macro-display {
-  color: white;
+/* --------- Card ---------- */
+
+.card {
+  margin: 2rem;
+  color: antiquewhite;
+  border: white 2px solid;
+  animation: fadeInRight 1000ms forwards;
+  opacity: 0;
+  /* max-width: 50px; */
 }
