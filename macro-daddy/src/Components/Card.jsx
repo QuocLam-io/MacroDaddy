@@ -15,14 +15,23 @@ const Card = ({ recipe, setDisplayMacros, displayMacros }) => {
   return (
     <div className="card-parent">
       <div className="card">
-        <img src={recipe.image} alt="" />
-        <p>{recipe.title}</p>
-        <p>Calories: {recipe.nutrition.nutrients[0].amount}</p>
-        <p>Carbs: {recipe.nutrition.nutrients[3].amount}</p>
-        <p>Fats: {recipe.nutrition.nutrients[1].amount}</p>
-        <p>Protein: {recipe.nutrition.nutrients[8].amount}</p>
-        <br />
-        <button onClick={test}>Kill Me</button>
+        <img className="card-img" src={recipe.image} alt="" />
+        <p className="card-name">{recipe.title}</p>
+        <div className="card-stats">
+          <p>Calories {recipe.nutrition.nutrients[0].amount}</p>
+          <p>Carbs {recipe.nutrition.nutrients[3].amount}g</p>
+          <p>Fats {recipe.nutrition.nutrients[1].amount}g</p>
+          <p>Protein {recipe.nutrition.nutrients[8].amount}g</p>
+        </div>
+        <div className="card-butts">
+          <button className="card-butt-recipe">
+            <a className="recipe-link" target="_blank" href={recipe.sourceUrl}>View Recipe</a>
+          </button>
+
+          <button className="card-butt-add" onClick={test}>
+            Add
+          </button>
+        </div>
       </div>
     </div>
   );

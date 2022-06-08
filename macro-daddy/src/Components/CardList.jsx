@@ -19,7 +19,9 @@ const CardList = ({
 
   if (recipes.length === 0) {
     recipeCards = (
-      <h1>My heart leaps, running for the stick you never threw.</h1>
+      <h1 className="heart">
+        My heart leaps, running for the stick you never threw.
+      </h1>
     );
   } else {
     recipeCards = recipes.map((recipe) => {
@@ -29,7 +31,6 @@ const CardList = ({
           recipe={recipe}
           displayMacros={displayMacros}
           setDisplayMacros={setDisplayMacros}
-          
         />
       );
     });
@@ -58,14 +59,18 @@ const CardList = ({
 
   return (
     <div className="cardlist-parent">
+    
       <div className="card-display">{recipeCards}</div>
       <div className="macro-display">
-<br />
+        <br />
+        <p>MY DAILY MACROS</p>
         <p>TDEE: {bmr}</p>
         <p>Calories: {displayMacros.calories}</p>
         <p>Carbs: {displayMacros.carbs}</p>
         <p>Fats: {displayMacros.fats}</p>
         <p>Proteins: {displayMacros.proteins}</p>
+        <img className="plate" src={require(`../images/Food Illustration.png`)} alt="" />
+        <p>Start Logging your meals</p>
       </div>
     </div>
   );
