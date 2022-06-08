@@ -23,20 +23,22 @@ const UserForm = ({
           });
         }}
       >
-        <p>CREATE YOUR PROFILE</p>
-        <label>Enter Your Name</label>
+        <p className="cYP">CREATE YOUR PROFILE</p>
+        <p className="eYN">Enter Your Name</p>
         <input className="form-name" type="text" placeholder="Name" />
-        <p>CALCULATE HOW MANY CALORIES YOU USE DAILY</p>
-        <p>Harris-Benedict Calculator</p>
-        <p>
-          We use your Total Daily Expenditure (TDEE) as a baseline to help
-          recommend the amount of macros you can plan to consume for your weight
-          loss goal.
+        <p className="calculate">CALCULATE HOW MANY CALORIES YOU USE DAILY</p>
+        <p className="hBC">Harris-Benedict Calculator</p>
+        <p className="explain">
+          We use your <span> Total Daily Expenditure (TDEE)</span> as a
+          baseline to help recommend the amount of macros you can plan to
+          consume for your weight loss goal.
         </p>
-        <input className="form-number" type="number" placeholder="Age" />
+        <input className="form-number" type="number" placeholder="Age" min="18"/>
         <select name="gender" id="gender">
-          <option value="female">Girlie</option>
-          <option value="male">Boiiii</option>
+          <option className="test" value="male">
+            Daddy
+          </option>
+          <option value="female">Mami</option>
         </select>
         <input type="number" placeholder="Inches" />
         <input type="number" placeholder="Pounds" />
@@ -47,7 +49,7 @@ const UserForm = ({
           <option value="1.725">Very Active: Exercise 6-7/week 🦈</option>
           <option value="1.9">Lean Meat: Exercise 7+/week 🦁</option>
         </select>
-        <button type="submit">I am a butt on</button>
+        <button className="form-butt-on" type="submit">Butt On</button>
       </form>
     </div>
   );

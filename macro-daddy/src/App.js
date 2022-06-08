@@ -16,13 +16,12 @@ function App() {
   const [recipes, setRecipe] = useState("");
   const [bmr, setBmr] = useState(0);
   const [searchResults, setSearchResults] = useState("");
-  const [selectedMacros, setSelectedMacros] = useState({})
-  console.log(selectedMacros);
+
   const [displayMacros, setDisplayMacros] = useState({
     calories: 0,
     carbs: 0,
-    fat: 0,
-    protein: 0,
+    fats: 0,
+    proteins: 0,
   });
 
   //! ------------------------- Search Button Function ------------------------- */
@@ -86,7 +85,8 @@ function App() {
                 setBmr={setBmr}
                 callAxios={callAxios}
                 recipes={recipes}
-                setSelectedMacros={setSelectedMacros}
+                displayMacros={displayMacros}
+                setDisplayMacros={setDisplayMacros}
               />
             ) : (
               <LandingPage

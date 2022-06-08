@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ setSearchResults, searchResults, callAxios, submitHandler }) => {
+
+  
   const searchResultsHandler = (e) => {
     setSearchResults(e.target.value);
   };
@@ -24,7 +26,6 @@ const Navbar = ({ setSearchResults, searchResults, callAxios, submitHandler }) =
 
       <div className="nav-input" action="">
         <input
-          //   className="nav-input"
           type="text"
           name=""
           id=""

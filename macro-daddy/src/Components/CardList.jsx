@@ -9,16 +9,29 @@ const CardList = ({
   callAxios,
   displayCard,
   recipes,
+
+  displayMacros,
+  setDisplayMacros,
 }) => {
   //! --------------------------- Yonghai is a genius -------------------------- */
 
   let recipeCards;
 
   if (recipes.length === 0) {
-    recipeCards = <h1>My heart leaps, running for the stick you never threw.</h1>;
+    recipeCards = (
+      <h1>My heart leaps, running for the stick you never threw.</h1>
+    );
   } else {
     recipeCards = recipes.map((recipe) => {
-      return <Card key={recipe.id} recipe={recipe} />;
+      return (
+        <Card
+          key={recipe.id}
+          recipe={recipe}
+          displayMacros={displayMacros}
+          setDisplayMacros={setDisplayMacros}
+          
+        />
+      );
     });
   }
 
@@ -42,17 +55,17 @@ const CardList = ({
       );
     }
   }, []);
-  //   console.log(bmr);
 
   return (
     <div className="cardlist-parent">
       <div className="card-display">{recipeCards}</div>
       <div className="macro-display">
-        <p>Age: {userStats.age}</p>
-        <p>Calories: {bmr}</p>
-        <p>Proteins: </p>
-        <p>Carbs: </p>
-        <p>Fats: </p>
+<br />
+        <p>TDEE: {bmr}</p>
+        <p>Calories: {displayMacros.calories}</p>
+        <p>Carbs: {displayMacros.carbs}</p>
+        <p>Fats: {displayMacros.fats}</p>
+        <p>Proteins: {displayMacros.proteins}</p>
       </div>
     </div>
   );
