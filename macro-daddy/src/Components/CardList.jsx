@@ -40,37 +40,57 @@ const CardList = ({
   useEffect(() => {
     if (userStats.gender === "female") {
       setBmr(
-        (655 +
-          4.35 * userStats.weight +
-          4.7 * userStats.height -
-          4.7 * userStats.age) *
-          userStats.physical
+        Math.round(
+          (655 +
+            4.35 * userStats.weight +
+            4.7 * userStats.height -
+            4.7 * userStats.age) *
+            userStats.physical
+        )
       );
     } else {
       setBmr(
-        (66 +
-          6.23 * userStats.weight +
-          12.7 * userStats.height -
-          6.8 * userStats.age) *
-          userStats.physical
+        Math.round(
+          (66 +
+            6.23 * userStats.weight +
+            12.7 * userStats.height -
+            6.8 * userStats.age) *
+            userStats.physical
+        )
       );
     }
   }, []);
 
   return (
     <div className="cardlist-parent">
-    
       <div className="card-display">{recipeCards}</div>
       <div className="macro-display">
         <br />
-        <p>MY DAILY MACROS</p>
-        <p>TDEE: {bmr}</p>
-        <p>Calories: {displayMacros.calories}</p>
-        <p>Carbs: {displayMacros.carbs}</p>
-        <p>Fats: {displayMacros.fats}</p>
-        <p>Proteins: {displayMacros.proteins}</p>
-        <img className="plate" src={require(`../images/Food Illustration.png`)} alt="" />
+
+        <div className="display-math">
+          <div>MY DAILY MACROS</div>
+          <div className="math-divide">
+            <div> {bmr}</div>
+            <div>TDEE:</div>
+            <div>/</div>
+            <div>{displayMacros.calories}</div>
+            <div>Calories</div>
+          </div>
+
+          <div>Deficit</div>
+        </div>
+
+        <img
+          className="plate"
+          src={require(`../images/Food Illustration.png`)}
+          alt=""
+        />
         <p>Start Logging your meals</p>
+        <div className="display-stats">
+          <div>Carbs: {displayMacros.carbs}</div>
+          <div>Fats: {displayMacros.fats}</div>
+          <div>Proteins: {displayMacros.proteins}</div>
+        </div>
       </div>
     </div>
   );

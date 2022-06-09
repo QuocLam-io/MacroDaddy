@@ -31,18 +31,6 @@ function App() {
     callAxios();
     setSearchResults("");
   };
-
-  //! --------------------------Select Recipe Function----------------------------- */
-
-  // const selectRecipe = () => {
-  //   setDisplayMacros({
-  //     calories: calories +=
-  //     carbs: carbs +=
-  //     fat: fat +=
-  //     protein: protein +=
-  //   })
-  // };
-
   //! ---------------------------------- Axios --------------------------------- */
 
   let callAxios = () => {

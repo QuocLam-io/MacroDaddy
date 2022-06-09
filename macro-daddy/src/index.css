@@ -14,6 +14,7 @@ body {
 }
 
 .navbar {
+
   display: flex;
   padding: 10px;
   justify-content: space-between;
@@ -279,8 +280,7 @@ form select {
 
 .heart {
   margin-top: 100px;
-  /* text-decoration: underline; */
-  /* border-bottom: white 1px solid; */
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .cardlist-parent {
@@ -288,14 +288,12 @@ form select {
   flex-wrap: wrap;
   height: 100vh;
   background: #121212;
-  /* border: lemonchiffon 1px solid; */
   color: white;
 }
 .card-display {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* margin: 2rem 0 2rem 0; */
   height: 40vh;
   width: 70%;
   background: #121212;
@@ -303,12 +301,9 @@ form select {
 
 .macro-display {
   display: flex;
-  /* justify-content: center; */
+  font-family: koulen;
   align-items: center;
   flex-direction: column;
-  position: sticky;
-  /* background: orange; */
-  top: 7vh;
   width: 30%;
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -316,6 +311,20 @@ form select {
 
 .plate {
   width: 80%;
+}
+
+.display-math {
+  border: #ffffff 1px solid;
+}
+
+.math-divide {
+  border: #ffa726 1px solid;
+  display: flex;
+}
+
+.display-stats {
+  display: flex;
+  border: #ffffff 1px solid;
 }
 
 /* --------- Card ---------- */
@@ -335,9 +344,6 @@ form select {
       rgba(255, 255, 255, 0.13) 100%
     ),
     #121212;
-  /* box-shadow: #ffffff 1px 1px 1px 1px; */
-  /* overflow: hidden; */
-  /* border: white 1px solid; */
 }
 
 .card img {
@@ -352,19 +358,15 @@ form select {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  /* border: lemonchiffon 1px solid; */
 }
 .card-stats p {
   display: flex;
   text-align: center;
   font-weight: 100;
-  /* justify-content: center; */
-  /* border: lemonchiffon 1px solid; */
 }
 .card-butts {
   display: flex;
   justify-content: space-around;
-  /* border: white 1px solid; */
   padding: 10px;
 }
 
@@ -381,7 +383,6 @@ form select {
 .card-butt-add {
   background: #ffa726;
   border: none;
-  /* border: white 1px solid; */
   height: 30px;
   width: 50%;
   cursor: pointer;
@@ -389,5 +390,4 @@ form select {
 
 .recipe-link {
   color: white;
-  /* text-decoration: none; */
 }
