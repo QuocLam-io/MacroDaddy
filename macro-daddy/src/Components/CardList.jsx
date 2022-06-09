@@ -70,13 +70,12 @@ const CardList = ({
         <div className="display-math">
           <div>MY DAILY MACROS</div>
           <div className="math-divide">
-            <div> {bmr}</div>
-            <div>TDEE:</div>
-            <div>/</div>
             <div>{displayMacros.calories}</div>
             <div>Calories</div>
+            <div>/</div>
+            <div> {bmr}</div>
+            <div>TDEE</div>
           </div>
-
           <div>Deficit</div>
         </div>
 

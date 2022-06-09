@@ -14,7 +14,6 @@ body {
 }
 
 .navbar {
-
   display: flex;
   padding: 10px;
   justify-content: space-between;
@@ -311,16 +310,41 @@ form select {
 
 .plate {
   width: 80%;
+  margin-top: 30px;
 }
 
 .display-math {
-  border: #ffffff 1px solid;
+  /* border: #ffffff 1px solid; */
+}
+
+.display-math div:nth-child(odd){
+  text-align: center;
 }
 
 .math-divide {
-  border: #ffa726 1px solid;
+  /* border: #ffa726 1px solid; */
   display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+.math-divide div:nth-child(1), 
+.math-divide div:nth-child(3), 
+.math-divide div:nth-child(4) 
+{
+  font-size: 3rem;
+}
+
+.math-divide div:nth-child(3) {
+  font-size: 5rem;
+}
+
+.math-divide div:nth-child(2), 
+.math-divide div:nth-child(5) {
+font-family: lexend;
+font-weight: 100;
+}
+
 
 .display-stats {
   display: flex;
@@ -348,6 +372,7 @@ form select {
 
 .card img {
   width: 100%;
+  /* margin-top: 20px; */
 }
 
 .card-name {
