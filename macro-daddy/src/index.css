@@ -313,11 +313,19 @@ form select {
   margin-top: 30px;
 }
 
-.display-math {
-  /* border: #ffffff 1px solid; */
+.never {
+  gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #66bb6a;
 }
 
-.display-math div:nth-child(odd){
+.ever {
+  font-size: 2rem;
+}
+
+.display-math div:nth-child(odd) {
   text-align: center;
 }
 
@@ -328,27 +336,26 @@ form select {
   gap: 10px;
 }
 
-.math-divide div:nth-child(1), 
-.math-divide div:nth-child(3), 
-.math-divide div:nth-child(4) 
-{
-  font-size: 3rem;
+.math-divide div:nth-child(1),
+.math-divide div:nth-child(3),
+.math-divide div:nth-child(4) {
+  font-size: 2.5rem;
 }
 
 .math-divide div:nth-child(3) {
   font-size: 5rem;
 }
 
-.math-divide div:nth-child(2), 
+.math-divide div:nth-child(2),
 .math-divide div:nth-child(5) {
-font-family: lexend;
-font-weight: 100;
+  font-family: lexend;
+  font-weight: 100;
 }
 
-
 .display-stats {
+  gap: 10px;
   display: flex;
-  border: #ffffff 1px solid;
+  /* border: #ffffff 1px solid; */
 }
 
 /* --------- Card ---------- */

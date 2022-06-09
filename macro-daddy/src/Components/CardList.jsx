@@ -61,6 +61,9 @@ const CardList = ({
     }
   }, []);
 
+  const deficit = Math.round(bmr - displayMacros.calories);
+  bmr = Math.round(bmr);
+
   return (
     <div className="cardlist-parent">
       <div className="card-display">{recipeCards}</div>
@@ -76,7 +79,10 @@ const CardList = ({
             <div> {bmr}</div>
             <div>TDEE</div>
           </div>
-          <div>Deficit</div>
+          <div className="never">
+            <div className="ever">{deficit}</div>
+            <div className=""> Deficit</div>
+          </div>
         </div>
 
         <img
@@ -86,7 +92,7 @@ const CardList = ({
         />
         <p>Start Logging your meals</p>
         <div className="display-stats">
-          <div>Carbs: {displayMacros.carbs}</div>
+          <div>Carbs: {displayMacros.carbs} </div>
           <div>Fats: {displayMacros.fats}</div>
           <div>Proteins: {displayMacros.proteins}</div>
         </div>
