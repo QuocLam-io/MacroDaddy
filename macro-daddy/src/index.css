@@ -357,6 +357,15 @@ form select {
   display: flex;
   /* border: #ffffff 1px solid; */
 }
+.display-stats div {
+  /* display: flex; */
+  /* justify-content: center; */
+  text-align: center;
+  /* border: #ffffff 1px solid; */
+  font-size: 1.5rem;
+  font-family: lexend;
+  font-weight: 100;
+}
 
 /* --------- Card ---------- */
 
