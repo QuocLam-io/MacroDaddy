@@ -88,7 +88,7 @@ function App() {
             )
           }
         />
-        <Route path="/userpage" element={<UserPage />} />
+        <Route path="/userpage" element={<UserPage userStats={userStats} displayMacros={displayMacros} bmr={bmr} />} />
       </Routes>
     </div>
   );

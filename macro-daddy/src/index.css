@@ -432,3 +432,17 @@ form select {
 .recipe-link {
   color: white;
 }
+
+/* -------------------------------- User Page ------------------------------- */
+
+.userpage-parent {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.userpage-parent img{
+  width: 20%;
+}
