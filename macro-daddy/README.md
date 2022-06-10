@@ -5,7 +5,7 @@
 
 
 ## Images
-![]<img width="1440" alt="Screen Shot 2022-06-10 at 9 08 23 AM" src="https://user-images.githubusercontent.com/82473096/173071398-82e37bd0-34ac-4a51-96ac-335b4b10ef79.png">
+<img width="1440" alt="Screen Shot 2022-06-10 at 9 08 23 AM" src="https://user-images.githubusercontent.com/82473096/173071398-82e37bd0-34ac-4a51-96ac-335b4b10ef79.png">
 
 
 
