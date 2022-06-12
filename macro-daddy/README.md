@@ -28,7 +28,7 @@
 Here is a snippet of my button code that initializes the divs to have the hidden word appear in the center as boxes and the music to start.
 
 //! ------------------------------ TDEE Equation ----------------------------- */
-  useEffect(() => {
+>  useEffect(() => {
     if (userStats.gender === "female") {
       setBmr(
         Math.round(
