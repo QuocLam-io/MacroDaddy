@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
-import axios from "axios";
 import Card from "./Card";
 
 const CardList = ({
   userStats,
   bmr,
   setBmr,
-  callAxios,
-  displayCard,
   recipes,
 
   displayMacros,

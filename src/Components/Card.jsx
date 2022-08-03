@@ -25,7 +25,7 @@ const Card = ({ recipe, setDisplayMacros, displayMacros }) => {
         </div>
         <div className="card-butts">
           <button className="card-butt-recipe">
-            <a className="recipe-link" target="_blank" href={recipe.sourceUrl}>View Recipe</a>
+            <a className="recipe-link" target="_blank" rel="noopener" href={recipe.sourceUrl}>View Recipe</a>
           </button>
 
           <button className="card-butt-add" onClick={test}>

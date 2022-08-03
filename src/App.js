@@ -1,11 +1,9 @@
-import logo from "./logo.svg";
 import React, { useState } from "react";
-import { Link, Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import CardList from "./Components/CardList";
 import LandingPage from "./Components/WandingPage";
-import Card from "./Components/Card";
 import UserPage from "./Components/UserPage";
 import axios from "axios";
 
