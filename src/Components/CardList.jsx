@@ -10,6 +10,31 @@ const CardList = ({
   displayMacros,
   setDisplayMacros,
 }) => {
+
+  useEffect(() => {
+
+    if (userStats.gender === "female") {
+      setBmr(
+        Math.round(
+          (655 +
+            4.35 * userStats.weight +
+            4.7 * userStats.height -
+            4.7 * userStats.age) *
+            userStats.physical
+        )
+      );
+    } else {
+      setBmr(
+        Math.round(
+          (66 +
+            6.23 * userStats.weight +
+            12.7 * userStats.height -
+            6.8 * userStats.age) *
+            userStats.physical
+        )
+      );
+    }
+  }, []);
   //! --------------------------- Yonghai is a genius -------------------------- */
 
   let recipeCards;
@@ -34,29 +59,6 @@ const CardList = ({
   }
 
   //! --------------------------------------------------------------------------- */
-  useEffect(() => {
-    if (userStats.gender === "female") {
-      setBmr(
-        Math.round(
-          (655 +
-            4.35 * userStats.weight +
-            4.7 * userStats.height -
-            4.7 * userStats.age) *
-            userStats.physical
-        )
-      );
-    } else {
-      setBmr(
-        Math.round(
-          (66 +
-            6.23 * userStats.weight +
-            12.7 * userStats.height -
-            6.8 * userStats.age) *
-            userStats.physical
-        )
-      );
-    }
-  }, []);
 
   const deficit = Math.round(bmr - displayMacros.calories);
   bmr = Math.round(bmr);
