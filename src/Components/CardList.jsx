@@ -10,9 +10,7 @@ const CardList = ({
   displayMacros,
   setDisplayMacros,
 }) => {
-
-  useEffect(() => {
-
+  let genderHandler = () => {
     if (userStats.gender === "female") {
       setBmr(
         Math.round(
@@ -34,7 +32,12 @@ const CardList = ({
         )
       );
     }
+  };
+
+  useEffect(() => {
+    genderHandler();
   }, []);
+
   //! --------------------------- Yonghai is a genius -------------------------- */
 
   let recipeCards;
