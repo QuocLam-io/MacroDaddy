@@ -36,6 +36,7 @@ const CardList = ({
 
   useEffect(() => {
     genderHandler();
+    // eslint-disable-next-line
   }, []);
 
   //! --------------------------- Yonghai is a genius -------------------------- */
