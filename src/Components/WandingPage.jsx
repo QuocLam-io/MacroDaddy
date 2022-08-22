@@ -15,7 +15,7 @@ const LandingPage = ({ formConfirm, setFormYes, userFormSubmit, setUserFormSubmi
             setFormYes(true);
           }}
         >
-          CLICK ME YOU LITTLE BITCH <span>→</span>
+          CLICK ME <span>→</span>
         </div>
       </div>
       <div className="right-landing">{formConfirm && <UserForm userFormSubmit={userFormSubmit} setUserFormSubmit={setUserFormSubmit} userStats={userStats} setUserStats={setUserStats}   />}</div>
