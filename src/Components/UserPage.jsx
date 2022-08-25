@@ -8,7 +8,7 @@ const UserPage = ({bmr, displayMacros, userStats}) => {
     <div className="userpage-parent">
       <img
         className="janice"
-        src="https://c4.wallpaperflare.com/wallpaper/937/112/903/adults-riley-reid-brunette-face-wallpaper-preview.jpg"
+        src="https://i.fbcd.co/products/resized/resized-750-500/d4c961732ba6ec52c0bbde63c9cb9e5dd6593826ee788080599f68920224e27d.webp"
         alt=""
       />
       <p>Name: {userStats.name}</p>
