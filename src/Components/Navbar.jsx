@@ -35,7 +35,7 @@ const Navbar = ({ setSearchResults, searchResults, callAxios, submitHandler }) =
           onKeyDown={handleKeyDown}
         />
 
-        <button className="mag-butt" type="submit" onClick={submitHandler}>
+        <button className="mag-btn" type="submit" onClick={submitHandler}>
           <img
             className="magnify"
             src={require(`../images/magnify.png`)}
@@ -45,7 +45,7 @@ const Navbar = ({ setSearchResults, searchResults, callAxios, submitHandler }) =
       </div>
 
       <Link to="/userpage">
-        <p className="user-butt">MY MACROS</p>
+        <p className="user-btn">MY MACROS</p>
       </Link>
     </div>
   );

@@ -10,7 +10,7 @@ const LandingPage = ({ formConfirm, setFormYes, userFormSubmit, setUserFormSubmi
         <p>MacDADDY</p>
         <p>An evidence-based way to lose weight 🐽</p>
         <div
-          className="start-butt"
+          className="start-btn"
           onClick={() => {
             setFormYes(true);
           }}

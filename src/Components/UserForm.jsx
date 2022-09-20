@@ -49,7 +49,7 @@ const UserForm = ({
           <option value="1.725">Very Active: Exercise 6-7/week 🦈</option>
           <option value="1.9">Lean Meat: Exercise 7+/week 🦁</option>
         </select>
-        <button className="form-butt-on" type="submit">Butt On</button>
+        <button className="form-btn-on" type="submit">Submit</button>
       </form>
     </div>
   );

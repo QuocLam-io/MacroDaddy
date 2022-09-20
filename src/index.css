@@ -60,7 +60,7 @@ a {
   font-family: "Lexend";
 }
 
-.user-butt {
+.user-btn {
   color: white;
   font-family: "Lexend", sans-serif;
   font-size: 11px;
@@ -71,7 +71,7 @@ a {
   /* background: transparent; */
 }
 
-.user-butt:hover {
+.user-btn:hover {
   color: black;
   background: white;
   border-radius: 2px;
@@ -83,7 +83,7 @@ a {
   height: 100%;
 }
 
-.mag-butt {
+.mag-btn {
   transform: translateY(1px);
   height: 23px;
   cursor: pointer;
@@ -152,7 +152,7 @@ a {
   line-height: 1.8rem;
 }
 
-.start-butt {
+.start-btn {
   font-family: "Lexend";
   /* border: #ffffff 1px solid; */
   margin-top: 2rem;
@@ -163,12 +163,8 @@ a {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* .start-butt span {
-  border: #ffffff 1px solid;
-  transform: translateX(20px);
-} */
 
-.start-butt:hover {
+.start-btn:hover {
   transform: translateX(20px);
   cursor: pointer;
 }
@@ -267,7 +263,7 @@ form select {
   color: #ffa726;
 }
 
-.form-butt-on {
+.form-btn {
   height: 40px;
   width: 150px;
   background: #ffa726;
@@ -405,13 +401,13 @@ form select {
   text-align: center;
   font-weight: 100;
 }
-.card-butts {
+.card-btns {
   display: flex;
   justify-content: space-around;
   padding: 10px;
 }
 
-.card-butt-recipe {
+.card-btn-recipe {
   border: none;
   letter-spacing: 1px;
   color: white;
@@ -421,7 +417,7 @@ form select {
   cursor: pointer;
 }
 
-.card-butt-add {
+.card-btn-add {
   background: #ffa726;
   border: none;
   height: 30px;

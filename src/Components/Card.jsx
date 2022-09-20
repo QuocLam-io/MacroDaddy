@@ -23,8 +23,8 @@ const Card = ({ recipe, setDisplayMacros, displayMacros }) => {
           <p>Fats {recipe.nutrition.nutrients[1].amount}g</p>
           <p>Protein {recipe.nutrition.nutrients[8].amount}g</p>
         </div>
-        <div className="card-butts">
-          <button className="card-butt-recipe">
+        <div className="card-btns">
+          <button className="card-btn-recipe">
             <a
               className="recipe-link"
               target="_blank"
@@ -35,7 +35,7 @@ const Card = ({ recipe, setDisplayMacros, displayMacros }) => {
             </a>
           </button>
 
-          <button className="card-butt-add" onClick={test}>
+          <button className="card-btn-add" onClick={test}>
             Add
           </button>
         </div>
