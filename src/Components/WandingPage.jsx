@@ -8,7 +8,7 @@ const LandingPage = ({ formConfirm, setFormYes, userFormSubmit, setUserFormSubmi
         <p>WhackDADDY</p>
         <p>TO</p>
         <p>MacDADDY</p>
-        <p>An evidence-based way to lose weight 🐽</p>
+        <p>An evidence-based way to lose weight 💪</p>
         <div
           className="start-btn"
           onClick={() => {
